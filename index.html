@@ -77,6 +77,12 @@ background-position: center;
         
     }
 
+     .right {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
     form {
         padding: 15px;
     }
@@ -89,6 +95,27 @@ background-position: center;
     button {
         padding: 10px 20px;
     }
+
+        .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.thumbnails img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
 </style>
 </head>
 <body>
@@ -111,7 +138,7 @@ background-position: center;
         <div class="content">
             
             <!-- Imagen principal centrada -->
-            <div class="left">
+            <div class="right">
                 <img src="imagen_principal.png" alt="Gruta de la Inmaculada Concepción">
             </div>
 
@@ -135,11 +162,13 @@ background-position: center;
             </div>
 
             <!-- Sección Fotos -->
-            <h2 id="fotos">Fotos</h2>
-            <img src="medio.jpg" alt="medio">
-            <img src="cerca.jpg" alt="cerca">
-            <img src="lejos.jpg" alt="lejos">
-            <img src="Placa.jpg" alt="Place">
+<h2 id="fotos">Fotos</h2>
+<div class="thumbnails">
+    <a href="medio.jpg" target="_blank"><img src="medio.jpg" alt="medio"></a>
+    <a href="cerca.jpg" target="_blank"><img src="cerca.jpg" alt="cerca"></a>
+    <a href="lejos.jpg" target="_blank"><img src="lejos.jpg" alt="lejos"></a>
+    <a href="Placa.jpg" target="_blank"><img src="Placa.jpg" alt="Placa"></a>
+</div>
 
             <!-- Sección Agradecimiento -->
  <h2 id="Agradecimiento">Agradecimiento</h2>
