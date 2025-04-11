@@ -5,52 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gruta de la Inmaculada Concepción de la Virgen María</title>
     <style>
+        /* Fondo general */
         body { 
             font-family: Arial, sans-serif; 
-            margin: 20px; 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            background-image: url('imagen1.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
+
         h1 { 
             text-align: center; 
             color: navy; 
+            margin: 20px 0;
         }
+
         .container { 
             display: flex; 
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para legibilidad */
         }
+
         .sidebar { 
             width: 200px; 
             padding: 10px; 
         }
+
         .sidebar a { 
             display: block; 
             margin-bottom: 10px; 
             text-decoration: none; 
             color: blue; 
         }
+
         .content { 
             flex: 1; 
             padding: 20px; 
         }
-        .center { 
+
+        /* Centrado de la imagen principal */
+        .center {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Altura del viewport para centrar verticalmente */
+            margin: 20px 0;
         }
-        img { 
-            max-width: 100%; 
-            height: auto; 
-            display: block;
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
-        iframe { 
+
+        iframe {
             width: 100%; 
             height: 400px; 
             border: 0; 
         }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(240, 240, 240, 0.9);
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
     </style>
 </head>
 <body>
+    <!-- Encabezado -->
     <h1>Gruta de la Inmaculada Concepción de la Virgen María</h1>
+
+    <!-- Contenedor principal -->
     <div class="container">
+        <!-- Barra lateral -->
         <div class="sidebar">
             <a href="#historia">Historia</a>
             <a href="#ubicacion">Ubicación</a>
@@ -59,28 +102,23 @@
             <a href="#Enlaces">Enlaces</a>
             <a href="#Contacto">Contacto</a>
         </div>
+
+        <!-- Contenido principal -->
         <div class="content">
-            <!-- Contenedor centrado para la imagen principal -->
+            
+            <!-- Imagen principal centrada -->
             <div class="center">
                 <img src="imagen_principal.png" alt="Gruta de la Inmaculada Concepción">
             </div>
 
             <!-- Sección Historia -->
-            <h2 id="historia">La Gruta de la Inmaculada Concepción: Un Tesoro Espiritual en el Corazón de San Isidro</h2>
-            <p>En el año 1935, doña María Consuelo Fernández Caja, una mujer profundamente devota de la Virgen María y figura clave en la fundación del distrito de San Isidro, decidió emprender un acto de fe que marcaría para siempre la historia espiritual del lugar. Con un fervor que traspasaba fronteras, envió a su hermano Pedro Fernández en una misión especial: viajar hasta la Basílica de la Inmaculada Concepción en Lourdes, Francia, un sitio sagrado reconocido mundialmente por ser epicentro de milagros y sanaciones.</p>
-            <p>Pedro regresó al Perú con un valioso tesoro: una réplica tallada en mármol de la imagen de la Virgen, idéntica a la que se venera en Lourdes. Esta escultura, llegada por barco tras un largo viaje, fue colocada en una gruta construida con dedicación y esmero. Incluso la reja que hoy la protege es una fiel reproducción de la existente en Francia, símbolo del deseo de mantener intacta la esencia del santuario original.</p>
-<p>El 8 de diciembre de 1938, fecha en la que la Iglesia celebra la proclamación del dogma de la Inmaculada Concepción, definido por el Papa Pío IX en 1854, se inauguró solemnemente la gruta en San Isidro. A los pies de la Virgen se colocó una placa que hasta el día de hoy emociona a quienes la leen. En ella se puede leer:
-"Madre mía, por las gracias recibidas, procuraré tu culto toda mi vida. Dic. 8 de 1938 – Consuelo Fernández".</p>
-<p>Y así fue. Doña María Consuelo dedicó el resto de su vida al cuidado y veneración de esta gruta, convirtiéndola en un lugar de encuentro con lo sagrado para los vecinos del distrito y más allá. A su muerte, su hermana María Rosa continuó con la tradición, y hoy la antorcha ha sido tomada por su sobrino, Salvador Fernández, quien vela por la preservación y el amor a este espacio santo.</p>
-<p>Durante años, esta gruta fue el corazón espiritual de la comunidad. Cada cierto tiempo, el Obispo de Lima acudía a celebrar misa, y en ocasiones especiales, la Virgen era sacada en procesión por las calles del distrito, acompañada de cánticos, oraciones y la devoción de cientos de fieles. Estos eventos no solo reafirmaban la fe de los asistentes, sino que también tejían lazos comunitarios que aún perduran.</p>
-<p>Hoy, más de ocho décadas después, la gruta sigue viva. Vecinos antiguos y nuevos se acercan con respeto y fe, llevando flores frescas, encendiendo velas y confiando sus plegarias a la Virgen. Entre ellos está Bruno, un fiel devoto que cada semana ofrece lirios blancos a la Inmaculada Concepción. Su historia ha tocado los corazones de muchos: diagnosticado con un cáncer avanzado mientras se encontraba en Estados Unidos, decidió encomendarse a la Virgen al regresar al Perú. Deteniéndose frente a la gruta una tarde cualquiera, rezó con lágrimas en los ojos y se entregó completamente a su fe. Semanas después, tras nuevos exámenes médicos, los doctores quedaron perplejos: no había rastro alguno de la enfermedad.</p>
-<p>Este lugar no es solo una gruta; es un santuario de esperanza, un rincón de paz en medio de la ciudad, y un testimonio viviente de que la fe puede mover montañas. Visitar la Gruta de la Inmaculada Concepción en San Isidro no es solo hacer un viaje físico, sino espiritual. Es detenerse, respirar, reflexionar, agradecer y renovar la esperanza. Cada piedra, cada flor, cada vela encendida lleva consigo una historia, una súplica, un milagro.</p>
-<p>Si alguna vez sientes que necesitas un espacio donde el alma encuentre consuelo, este es el lugar. No dejes de visitarlo. La Virgen te espera.</p>
-  
+            <h2 id="historia">La Gruta de la Inmaculada Concepción</h2>
+            <p>En el año 1935, doña María Consuelo Fernández Caja, una mujer profundamente devota de la Virgen María y figura clave en la fundación del distrito de San Isidro...</p>
+
             <!-- Sección Ubicación -->
             <h2 id="ubicacion">Ubicación</h2>
             <div class="center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0529846952377!2d-77.04198208984184!3d-12.108525343003256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c838aba22557%3A0x8005a3037f091e21!2sCa.%20Almirante%20Lord%20Cochrane%20246%2C%20San%20Isidro%2015073%2C%20Peru!5e0!3m2!1sen!2sus!4v1743621799010!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0529846952377!2d-77.04198208984184!3d-12.108525343003256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c838aba22557%3A0x8005a3037f091e21!2sCa.%20Almirante%20Lord%20Cochrane%20246%2C%20San%20Isidro%2015073%2C%20Peru!5e0!3m2!1sen!2sus!4v1743621799010!5m2!1sen!2sus"></iframe>
                 <img src="streetview.jpg" alt="Vista de la ubicación">
             </div>
 
@@ -92,42 +130,41 @@
 
             <!-- Sección Agradecimiento -->
             <h2 id="Agradecimiento">Agradecimiento</h2>
-            <p>Queridos amigos, vecinos y devotos de la Inmaculada Concepción,</p>
-            <p>Queremos expresar nuestra más sincera gratitud a todos aquellos que se acercan a nuestra gruta para dejar flores, velas y otras ofrendas. Su generosidad y devoción son un testimonio vivo del amor y la fe que nos unen a la Inmaculada Concepción.</p>
-<p>Agradecemos de corazón su apoyo y su esfuerzo por mantener viva la llama de la fe en este lugar sagrado. Su contribución es invaluable, ya que nos permite continuar ofreciendo un espacio de oración y reflexión para todos aquellos que buscan la guía y el amor de la Inmaculada Concepción. Que la Virgen Inmaculada los bendiga y los proteja, y que su devoción sea recompensada con abundantes gracias y bendiciones. Estamos profundamente agradecidos por su amor y compromiso, y esperamos seguir siendo un lugar de encuentro espiritual para todos ustedes.</p>
-            <!-- Sección Enlaces -->
-            <h2 id="Enlaces">Enlaces</h2>
-         <a href="https://www.vaticannews.va/es/fiestas-liturgicas/inmaculada-concepcion-de-la-santisima-virgen-maria.html" target="_blank" rel="noopener noreferrer">
-             Oración a la Inmaculada Concepción por el Papa Francisco (2013)
-         </a>
+            <p>Queridos amigos, vecinos y devotos de la Inmaculada Concepción...</p>
 
-         <!-- Sección Contacto -->
-         <h2 id="Contacto">Contacto</h2>
-         <form action="https://formsubmit.co/kalikollc@gmail.com" method="POST">
-             <div>
-                 <label for="name">Nombre:</label>
-                 <input type="text" id="name" name="name" required>
-             </div>
+             <!-- Sección Enlaces -->
+             <h2 id="Enlaces">Enlaces</h2>
+             <a href="https://www.vaticannews.va/es/fiestas-liturgicas/inmaculada-concepcion-de-la-santisima-virgen-maria.html" target="_blank" rel="noopener noreferrer">
+                 Oración a la Inmaculada Concepción por el Papa Francisco (2013)
+             </a>
 
-             <div>
-                 <label for="phone">Teléfono:</label>
-                 <input type="text" id="phone" name="phone">
-             </div>
+             <!-- Sección Contacto -->
+             <h2 id="Contacto">Contacto</h2>
+             <form action="https://formsubmit.co/kalikollc@gmail.com" method="POST">
+                 <div>
+                     <label for="name">Nombre:</label>
+                     <input type="text" id="name" name="name" required>
+                 </div>
 
-             <div>
-                 <label for="message">Mensaje:</label>
-                 <textarea id="message" name="message" rows="6" required></textarea>
-             </div>
+                 <div>
+                     <label for="phone">Teléfono:</label>
+                     <input type="text" id="phone" name="phone">
+                 </div>
 
-             <!-- Opcionales -->
-             <input type="hidden" name="_captcha" value="false">
-             <input type="hidden" name="_next" value="https://mavilagonzalez.github.io/InmaculadaConcepcion">
+                 <div>
+                     <label for="message">Mensaje:</label>
+                     <textarea id="message" name="message" rows="6" required></textarea>
+                 </div>
 
-             <button type="submit">Enviar</button>
-         </form>
+                 <!-- Opcionales -->
+                 <input type="hidden" name="_captcha" value="false">
+                 <input type="hidden" name="_next" value="/gracias.html">
 
-        </div> <!-- Fin del contenido -->
-    </div> <!-- Fin del contenedor principal -->
+                 <button type="submit">Enviar</button>
+             </form>
+
+         </div> <!-- Fin del contenido principal -->
+    </div> <!-- Fin del contenedor -->
 
     <!-- Footer -->
     <footer>&copy; 2025 Gruta de la Inmaculada Concepción - San Isidro</footer>
